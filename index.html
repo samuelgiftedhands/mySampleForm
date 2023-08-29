@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header class="banner">
+        <h2>Infotech <span>Path</span></h2>
+        <p>Student's Data Capturing System</p>
+    </header>
+    <main class="container">
+        <section class="form-box">
+        <form action="" id="myForm" name="Forminfo" onsubmit="return validation()">
+            <p id="result"></p>
+            <h4>Sign Up</h4>
+            <div class="input-box">
+                <i class='bx bx-user'></i>
+                <input type="text" placeholder="First Name" id="firsrName" name="Firstname" required>
+                <span id="errorText" style="color:crimson;"></span>
+            </div>
+            <div class="input-box">
+                <i class='bx bx-user'></i>
+                <input type="text" placeholder="Last Name" id="lastName" name="Lastname" required>
+            </div>
+            <div class="input-box">
+                <i class='bx bx-current-location' ></i>
+                <input type="text" placeholder="Location" id="user_address" name="Location" required>
+            </div>
+            <div class="input-box">
+                <i class='bx bx-lock-alt' ></i>
+                <input type="email" placeholder="E-mail" id="user_email" name="Email" >
+            </div>
+            <div class="input-box">
+                <i class='bx bx-low-vision'></i>
+                <input type="password" placeholder="Password" id="user_password" name="Password" required minlenth="4" 
+                maxlength="12">
+            </div>
+            <div class="input-box">
+                <i class='bx bx-low-vision'></i>
+                <input type="password" placeholder="Confirm Password" id="confirm_password" name="CPassword" required minlenth="4" 
+                maxlength="12">
+            </div>
+            <div class="button">
+                <input type="submit" class="btn" onclick="validation()" value="Register">
+            </div>
+            <div class="other">
+                <span><a href="#">Forget Password</a></span>
+                <span><a href="login.html">Login</a></span>
+            </div>
+        </form>
+        </section>
+    <!--End result pop up value-->
+        <section class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank you!</h2>
+            <p>Your Registration was successfully submitted.</p>
+            <a href="login.html"><button onclick="CloseSlide()">Ok</button></a>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright Infotech <span>Path</span> 2023.</p>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>

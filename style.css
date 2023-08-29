@@ -1,0 +1,168 @@
+
+*{
+    box-sizing: border-box;
+    font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url(images/photo-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.banner{
+    position: relative;
+    display: list-item;
+    justify-content: center;
+    align-items: center;
+    color: #fff8dc;
+}
+.banner h2{
+    text-align: center;
+}
+.banner h2 span{
+    text-align: center;
+    color: crimson;
+}
+.banner p{
+    text-align: center;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 680px;
+    border: 2px solid rgba(255, 255, 2550.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box h4{
+    color: #808080;
+    text-align: center;
+    font-size: 30px;
+}
+.form-box .input-box{
+    position: relative;
+    margin: 25px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.form-box .input-box input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: #fff;
+    font-size: 16px;
+}
+#result{
+    color: #dc143c;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+}
+i{
+    position: absolute;
+    color: #fff;
+    top: 13px;
+    right: 0;
+}
+input::placeholder{
+    color: #fff;
+}
+.btn{
+    color: #fff;
+    background: coral;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgba(0,0,0,.5);
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+}
+.other span a{
+    color: #fff8dc;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.other span a:focus{
+    text-decoration: underline;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+}
+footer p{
+   color: #fff8dc;
+   text-align: center;
+}
+footer p span{
+    color: crimson;
+}
+.popup{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s , top .4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color: #000;
+}
+.popup ion-icon{
+    color: #006400;
+    font-size: 50px;
+}
+.popup button{
+    width: 100%;
+    background: #006400;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .1);
+}
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.popuph2{
+    font-weight: 500;
+    font-size: 36px;
+    margin: 30px 0;
+}
+.open-slide{
+    top: 50%;
+    transform: translate(-48%, -50%) scale(1);
+    visibility: visible;
+}
